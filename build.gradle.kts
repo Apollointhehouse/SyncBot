@@ -14,7 +14,9 @@ repositories {
 }
 
 dependencies {
-    implementation("com.jessecorbett:diskord-jvm:1.8.1")
+    implementation("com.jessecorbett:diskord:1.8.1")
+
+    // This library is selected for convenience.  Feel free to replace it with your own, preferred logging library.
     implementation("org.slf4j:slf4j-simple:1.7.30")
 }
 
