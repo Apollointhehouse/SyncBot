@@ -2,6 +2,13 @@
 
 A starter project to quickly ramp up with the Diskord library.
 
+## What is included?
+
+* A basic Gradle configuration with the following dependencies:
+    * Diskord API (JVM)
+    * A basic logger implementation (can be replaced with a more advanced library)
+* A very simple Diskord bot implementing a ping example
+
 ## How do I use this?
 
 Before this project can be used, a Diskord API bot token will be required.  Check the Discord API
