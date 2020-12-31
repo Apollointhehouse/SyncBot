@@ -7,8 +7,8 @@ A starter project to quickly ramp up with the Diskord library.
 Before this project can be used, a Diskord API bot token will be required.  Check the Discord API
 [documentation](https://discord.com/developers/docs/intro) for information on how to acquire this.
 
-Once a bot token has been acquired, create a file in `src/main/resources` called `.bot-token` and paste in the bot token.
-This file is explicitly excluded from Git, so it does not accidentally get publicly exposed.
+Once a bot token has been acquired, create a file in `src/main/resources` called `bot-token.txt` and paste in the bot 
+token.  This file is explicitly excluded from Git, so it does not accidentally get publicly exposed.
 
 After creating the bot token file, simply run the main function through your IDE or run the Gradle `run` task 
 (`gradlew run` on Windows CLI, `./gradlew run` on Linux or MacOS).

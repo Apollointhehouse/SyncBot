@@ -9,9 +9,9 @@ import com.jessecorbett.diskord.dsl.commands
  * and as a way to prevent accidental disclosure of bot tokens.
  */
 private val BOT_TOKEN = try {
-    ClassLoader.getSystemResource(".bot-token").readText().trim()
+    ClassLoader.getSystemResource("bot-token.txt").readText().trim()
 } catch (error: Exception) {
-    throw RuntimeException("Failed to load bot token. Make sure to create a file named .bot-token in" +
+    throw RuntimeException("Failed to load bot token. Make sure to create a file named bot-token.txt in" +
             " src/main/resources and paste the bot token into that file.", error)
 }
 

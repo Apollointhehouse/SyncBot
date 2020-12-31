@@ -19,4 +19,4 @@ tmp/
 .project
 
 # Starter project files
-.bot-token
+bot-token.txt
