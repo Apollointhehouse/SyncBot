@@ -1,7 +1,7 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    kotlin("jvm") version "1.3.72"
+    kotlin("jvm") version "1.4.32"
     application
 }
 
@@ -10,17 +10,23 @@ version = "1.0.0-SNAPSHOT"
 
 repositories {
     mavenCentral()
-    jcenter()
+
+    // Enable GitLab snapshots
+    maven("https://gitlab.com/api/v4/projects/10363714/packages/maven")
 }
+
+// Uncomment this block if you want to use your preferred logging library instead of slf4j-simple
+/*configurations {
+    implementation {
+        exclude("org.slf4j", "slf4j-simple")
+    }
+}*/
 
 dependencies {
-    implementation("com.jessecorbett:diskord:1.8.1")
-
-    // This library is selected for convenience.  Feel free to replace it with your own, preferred logging library.
-    implementation("org.slf4j:slf4j-simple:1.7.30")
+    implementation("com.jessecorbett:diskord-bot:2.0.0-SNAPSHOT")
 }
 
-tasks.withType<KotlinCompile>() {
+tasks.withType<KotlinCompile> {
     kotlinOptions.jvmTarget = "1.8"
 }
 
