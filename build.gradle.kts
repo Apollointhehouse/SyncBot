@@ -1,7 +1,7 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    kotlin("jvm") version "1.4.32"
+    kotlin("jvm") version "1.5.10"
     application
 }
 
@@ -10,9 +10,6 @@ version = "1.0.0-SNAPSHOT"
 
 repositories {
     mavenCentral()
-
-    // Enable GitLab snapshots
-    maven("https://gitlab.com/api/v4/projects/10363714/packages/maven")
 }
 
 // Uncomment this block if you want to use your preferred logging library instead of slf4j-simple
@@ -23,7 +20,7 @@ repositories {
 }*/
 
 dependencies {
-    implementation("com.jessecorbett:diskord-bot:2.0.0-SNAPSHOT")
+    implementation("com.jessecorbett:diskord-bot:2.0.0")
 }
 
 tasks.withType<KotlinCompile> {
