@@ -22,11 +22,8 @@ After creating the bot token file, simply run the main function through your IDE
 
 ## Frequently Asked Questions
 
-* What is the license of this starter code?
-    * This starter code is available under the public domain.  Where public domain is not available, this code is also 
-      available under the [WTFPLv2](https://choosealicense.com/licenses/wtfpl/).
 * Where can I find the Diskord documentation?
-    * Refer to the [project page](https://gitlab.com/jesselcorbett/diskord) on GitLab.
+    * Refer to the [project page](https://gitlab.com/diskord/diskord) on GitLab.
 * I don't see my bot! How do I get it to join my guild?
     * Refer to the [Bot Authorization](https://discord.com/developers/docs/topics/oauth2#bots) documentation section of 
       the Discord API documentation.
