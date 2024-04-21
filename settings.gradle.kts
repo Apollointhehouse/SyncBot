@@ -1,1 +1,1 @@
-rootProject.name = "diskord-starter"
+rootProject.name = "SyncBot"

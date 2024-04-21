@@ -1,32 +1,19 @@
-import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
-
 plugins {
-    kotlin("jvm") version "1.8.20"
+    kotlin("jvm") version "1.9.20"
     application
 }
 
-group = "com.example"
-version = "1.0.0-SNAPSHOT"
+group = "io.github.apollointhehouse"
+version = "1.0.0"
 
 repositories {
     mavenCentral()
 }
 
-// Uncomment this block if you want to use your preferred logging library instead of slf4j-simple
-/*configurations {
-    implementation {
-        exclude("org.slf4j", "slf4j-simple")
-    }
-}*/
-
 dependencies {
     implementation("com.jessecorbett:diskord-bot:4.0.0")
 }
 
-tasks.withType<KotlinCompile> {
-    kotlinOptions.jvmTarget = "1.8"
-}
-
 application {
-    mainClass.set("com.example.MainKt")
+    mainClass.set("io.github.apollointhehouse.MainKt")
 }
