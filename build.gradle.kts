@@ -1,3 +1,5 @@
+import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+
 plugins {
     kotlin("jvm") version "1.9.20"
     application
@@ -11,7 +13,11 @@ repositories {
 }
 
 dependencies {
-    implementation("com.jessecorbett:diskord-bot:4.0.0")
+    implementation("com.jessecorbett:diskord-bot:5.4.0")
+}
+
+tasks.withType<KotlinCompile> {
+    kotlinOptions.jvmTarget = "11"
 }
 
 application {
